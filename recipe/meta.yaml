@@ -1,5 +1,5 @@
 {% set name = "pettingzoo" %}
-{% set version = "1.24.3" %}
+{% set version = "1.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pettingzoo-{{ version }}.tar.gz
-  sha256: 91f9094f18e06fb74b98f4099cd22e8ae4396125e51719d50b30c9f1c7ab07e6
+  sha256: 4b8a8552eab07a9c8f37dca094e59ee194003c57e2a7e7348bdf7c62049eecf6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
